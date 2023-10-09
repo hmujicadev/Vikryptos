@@ -1,0 +1,11 @@
+{
+  "header": {
+    "whitepaper": "Papel blanco",
+    "contractAddress": "Dirección de contrato",
+    "buy$VCryptos": "Comprar $VIK",
+    "contractAudit": "Auditoría de contrato"
+  },
+  "home": {
+    "title": "Vikrypto | Juego NFT"
+  }
+}

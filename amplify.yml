@@ -1,0 +1,21 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - nvm install v16.13.2
+        - yarn install
+    build:
+      commands:
+        - nvm install v16.13.2
+        - yarn run export
+    postBuild:
+      commands:
+        - curl -s -X POST --data "text=🟢 Deploy successful on `date` $URL_APP Branch:$AWS_BRANCH  Commit:[$(echo $AWS_COMMIT_ID| cut -c1-8)] in Amplify Job:$AWS_JOB_ID \`Repo\`$AWS_CLONE_URL" --data "disable_web_page_preview=true" --data "chat_id=-612016171" 'https://api.telegram.org/bot5088525947:AAHFiUD3jRRmuLCShrxbo4IyuQ8qr3JoPPk/sendMessage'
+  artifacts:
+    baseDirectory: out
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*

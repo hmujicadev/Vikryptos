@@ -1,0 +1,11 @@
+{
+  "header": {
+    "whitepaper": "Valkoinen paperi",
+    "contractAddress": "Sopimusosoite",
+    "buy$VCryptos": "Ostaa $VIK",
+    "contractAudit": "Sopimuksen tarkastus"
+  },
+  "home": {
+    "title": "Vikrypto | NFT peli"
+  }
+}

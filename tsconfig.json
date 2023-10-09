@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "components/Home/AboutSection/NFTSection/NFTCard/NFTCard.tsx",
+    "components/Home/AboutSection/NFTSection/NFTCard/VikingModelA/VikingModelA.jsx",
+    "components/Home/AboutSection/NFTSection/NFTCard/VikingCharacter.jsx"
+  ],
+  "exclude": ["node_modules"]
+}
